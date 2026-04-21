@@ -1,0 +1,317 @@
+.projects-container {
+    margin-top: 4%;
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    /* Horizontal center */
+    align-items: center;
+    /* Vertical center */
+
+    text-align: center;
+    /* background: #f8f9fa; */
+}
+
+/* Inner content */
+.projects-content {
+    max-width: 700px;
+    padding: 20px;
+}
+
+/* Heading */
+.projects-content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+
+/* Div and card sections  */
+
+
+
+
+
+
+/* GRID SYSTEM */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+/* CARD */
+.project-card {
+    border-radius: 5%;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* CREATIVE HOVER */
+/* .project-card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+} */
+
+/* IMAGE */
+.img-box {
+    width: 100%;
+    height: 220px;
+    /* 🔥 MUST: fixed height */
+    overflow: hidden;
+    border-radius: 12px 12px 0 0;
+    /* optional nice top rounding */
+}
+.img-box img {
+    object-position: top center;
+    width: 100%;
+    height: 100%;
+    /* 🔥 MUST */
+    object-fit: cover;
+    /* main property */
+    object-position: center;
+    /* adjust if needed */
+    display: block;
+    transition: 0.4s;
+}
+
+.img-box:hover img {
+    transform: scale(1.1);
+}
+
+/* BODY */
+.card-body {
+    padding: 40px;
+    text-align: left;
+}
+
+/* TITLE */
+.card-body h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.project-name {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+
+/* TAGS */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.tags span {
+    font-size: 15px;
+    background: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 25px;
+    background: #111;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+/* Animation ways */
+
+.btn-fill {
+    text-decoration: none;
+    position: relative;
+    padding: 10px 18px;
+    font-size: 1em;
+    border-radius: 25px;
+    border: 2px solid black;
+    background: transparent;
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+/* FILL LAYER */
+.btn-fill::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #000, #444);
+    /* background: black; */
+    z-index: -1;
+    transition: width 0.4s ease;
+}
+
+/* HOVER EFFECT */
+.btn-fill:hover::before {
+    width: 100%;
+}
+
+.btn-fill:hover {
+    color: white;
+}
+/* till now  */
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 30px;
+    }
+
+    .projects-grid {
+        gap: 20px;
+    }
+    .btn-fill{
+        padding: 5px 10px;
+            font-size: 1em;
+    }
+}
+
+/* in portfolio btn */
+
+.view-btn {
+    margin-top: 3%;
+    background: #111;
+    color: #fff;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.view-btn:hover {
+    background: #222;
+    transform: translateY(-2px);
+}
+
+/* ARROW STYLE */
+.arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* ARROW ANIMATION */
+.view-btn:hover .arrow {
+    transform: translateX(6px);
+}
+
+/* final portfolio btn css */
+
+.cta-container {
+    margin-top: 5%;
+    padding: 60px 20px;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+}
+
+/* MAIN BOX */
+.cta-box {
+    width: 100%;
+    max-width: 1000px;
+    background: #eaeaea;
+    border-radius: 20px;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* BADGE */
+.cta-badge {
+    background: #111;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+/* TITLE */
+.cta-box h1 {
+    margin-top: 15px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #111;
+}
+
+/* BUTTONS */
+.cta-buttons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* BASE BUTTON */
+.btn {
+    padding: 12px 22px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s ease;
+}
+
+/* PRIMARY */
+.primary {
+    background: #111;
+    color: white;
+}
+
+.primary:hover {
+    background: #222;
+    transform: translateY(-2px);
+}
+
+/* SECONDARY */
+.secondary {
+    background: #fff;
+    color: #111;
+    border: 1px solid #ddd;
+}
+
+.secondary:hover {
+    background: #f3f3f3;
+    transform: translateY(-2px);
+}
+
+/* ARROW ANIMATION */
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.secondary:hover .arrow {
+    transform: translateX(6px);
+}

@@ -1,0 +1,98 @@
+.skills-section {
+    padding: 80px 0;
+}
+
+.skills-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.skills-desc {
+    color: #777;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* CARD */
+.skill-card {
+    background: #f5f5f5;
+    border-radius: 20px;
+    padding: 40px 20px;
+    text-align: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+/* ICON */
+.icon-circle {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    transition: all 0.4s ease;
+}
+
+/* HOVER EFFECT */
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* ICON ANIMATION */
+.skill-card:hover .icon-circle {
+    transform: rotate(10deg) scale(1.1);
+}
+
+/* COLORS */
+.skill-card.blue .icon-circle {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.skill-card.dark .icon-circle {
+    background: #e5e7eb;
+    color: #111;
+}
+
+.skill-card.purple .icon-circle {
+    background: #ede9fe;
+    color: #7c3aed;
+}
+
+.skill-card.green .icon-circle {
+    background: #dcfce7;
+    color: #16a34a;
+}
+
+.skill-card.cyan .icon-circle {
+    background: #cffafe;
+    color: #0891b2;
+}
+
+.skill-card.orange .icon-circle {
+    background: #ffedd5;
+    color: #ea580c;
+}
+
+.skill-card.red .icon-circle {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+/* TEXT */
+.skill-card h5 {
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .skills-title {
+        font-size: 2rem;
+    }
+}

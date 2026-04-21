@@ -1,0 +1,190 @@
+/* SECTION BACKGROUND */
+.services-section {
+    /* background: #d8d2c9; */
+    background-color: white;
+    /* your beige color */
+    padding: 40px 20px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+/* TITLE */
+.services-title {
+  margin-top: 5%;
+    font-size: 48px;
+    font-weight: 700;
+    color: black;
+    /* deep red like your image */
+}
+
+/* SUBTITLE */
+.services-subtitle {
+    font-size: 18px;
+    color: #6c757d;
+    margin-top: 10px;
+}
+
+/* PRIMARY BUTTON */
+.custom-btn {
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.custom-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* OUTLINE BUTTON */
+.custom-outline {
+    padding: 10px 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.custom-outline:hover {
+    background: #111;
+    color: #fff;
+}
+/* second part css boxes */
+/* BACKGROUND */
+.services-section2 {
+    /* background: #d8d2c9; */
+        background-color: white;
+    /* your beige */
+    padding: 20px 20px;
+}
+
+/* TITLE */
+.services-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: black;
+    /* green tone like your image */
+}
+
+/* SUBTITLE */
+.services-subtitle {
+    color: #6c757d;
+    margin-top: 10px;
+}
+
+/* CARD */
+.service-card {
+    background: #ffffff;
+    padding: 30px 20px;
+    border-radius: 16px;
+    text-align: center;
+    height: 100%;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.35s ease;
+}
+
+/* HOVER EFFECT */
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+}
+
+/* ICON */
+.icon {
+    font-size: 32px;
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+.service-card h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .services-title {
+        font-size: 25px;
+        margin-top: 20%;
+    }
+    
+}
+
+/* third */
+
+/* SECTION */
+.contact-section {
+    /* background: #d8d2c9; */
+        background-color: white;
+    /* your beige */
+   
+    padding: 40px 20px;
+}
+
+/* TOP TITLE */
+.cta-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: green;
+    /* red tone */
+}
+
+/* SUBTITLE */
+.cta-subtitle {
+    color: #6c757d;
+    margin: 10px 0 25px;
+}
+
+/* BUTTON */
+.cta-btn {
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.cta-btn:hover {
+    transform: translateY(-2px);
+}
+
+/* CONTACT TITLE */
+.contact-title {
+    font-size: 25px;
+    font-weight: 700;
+    color: #14532d;
+    /* green tone */
+}
+
+/* CONTACT TEXT */
+.contact-subtitle {
+    color: #6c757d;
+    margin-top: 8px;
+}
+
+/* CONTACT BOX */
+.contact-box {
+    background: #fff;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+.contact-box {
+    cursor: pointer;
+    transition: 0.3s;
+    color: #fff;
+        background: #111;
+}
+
+.contact-box:hover {
+    transform: translateY(-3px);
+    background:red;
+    color: #fff;
+}
