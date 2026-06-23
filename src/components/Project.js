@@ -7,10 +7,13 @@ import p4 from '../Photos/p4.png'
 import p5 from '../Photos/p5.png'
 import p6 from '../Photos/p6.png'
 import pt from '../Photos/pt.png'
+import ScrollProgress from "./ScrollProgress";
+
 
 export default function Project() {
   return (
     <>
+    <ScrollProgress />
      <div className="projects-container">
       <div className="projects-content">
         <h1>My Projects</h1>

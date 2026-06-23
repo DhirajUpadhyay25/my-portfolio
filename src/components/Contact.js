@@ -1,10 +1,13 @@
 import React from 'react'
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaLinkedin, FaGithub, FaCode } from "react-icons/fa";
 import '../CssCodes/Contact.css';
+import ScrollProgress from "./ScrollProgress";
+
 
 export default function Contact() {
   return (
-        <>        
+        <>  
+        <ScrollProgress/>      
       <section className="contact-hero ">
         
       <div className="hero-content">

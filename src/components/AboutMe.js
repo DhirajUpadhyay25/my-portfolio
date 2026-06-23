@@ -7,11 +7,14 @@ import '../CssCodes/Aboutme.css';
 import clz from '../Photos/clz.png'
 import lba from '../Photos/lba.jpg'
 import '../CssCodes/Tabs.css';
+import ScrollProgress from "./ScrollProgress";
+
 
 const AboutMe = () => {
   const [activeTab, setActiveTab] = useState("education");
   return (
     <div className=" mt-4">
+      <ScrollProgress/>
 
     <section className="hero-banner">
 

@@ -2,7 +2,6 @@ import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import myphoto1 from '../Photos/myphoto1.png'
-
 import { Link } from "react-router-dom";
 // Skills imports
 import { BiLogoSpringBoot } from "react-icons/bi";
@@ -13,6 +12,9 @@ import '../CssCodes/Myprojectss.css';
 import p3 from '../Photos/p3.png'
 import p4 from '../Photos/p4.png'
 import '../CssCodes/Hero.css';
+import ScrollProgress from "./ScrollProgress";
+
+
 
 // its Css is : hero.css
 
@@ -45,17 +47,18 @@ const skill = [
 
 const Portfolio = () => {
   return (
-    <div className=' text-dark  mt-4 p-3 '>
+    
+    <div className=' text-dark  mt-4 p-3'>
+      <ScrollProgress />
       
-    <section className="hero-section container-fluid d-flex  align-items-center">
-      <div className="container ">
+<section className="hero-section container-fluid d-flex align-items-center">      
+<div className="container ">
         <div className="row  align-items-center">
 
           {/* LEFT CONTENT */}
           <div className="col-lg-6 col-md-12 text-center text-lg-start">
             <span className="badge bg-dark mb-3 px-3 py-2">
                 Open to Work </span>
-              
             <h1 className="hero-title">
               Hi, I am{" "}
               <span className="highlight">
@@ -65,7 +68,7 @@ const Portfolio = () => {
                     2000,
                     " A Java Developer ",
                      2000 ,
-                    "UI/UX Designer",
+                    "Backend Engineer",
                     2000,
                   ]}
                   speed={50}
@@ -111,8 +114,7 @@ const Portfolio = () => {
   {/* Skill section ....... */}
 
 
- <section className="skills-section container text-center" id="Skills">
-      
+<section className="skills-section container text-center" id="Skills">      
       <span className="badge bg-dark px-3 py-2 mb-3">
         Knowledge About 
       </span>
@@ -128,7 +130,7 @@ const Portfolio = () => {
       <div className="row mt-5 g-4">
         {skill.map((skill, index) => (
           <div key={index} className="col-lg-3 col-md-6">
-            <div className={`skill-card ${skill.color}`}>
+           <div className={`skill-card ${skill.color}`}>
               
               <div className="icon-circle">
                 {skill.icon}

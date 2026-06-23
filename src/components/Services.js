@@ -1,12 +1,13 @@
 import React from 'react'
 import '../CssCodes/Services.css';
 import { FaLaptopCode, FaBrain, FaDatabase, FaUsers, FaCode } from "react-icons/fa";
+import ScrollProgress from "./ScrollProgress";
+
 
 export default function Services() {
   return (
       <div >
-          
-
+        <ScrollProgress/>
           <div className="services-section">
 
       <div className="container text-center">
